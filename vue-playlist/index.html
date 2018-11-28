@@ -8,10 +8,18 @@
 	</head>
 	<body>
 		<div id="app1">
-			<p>{{ name }}</p>
+			<!-- 绑定数据 -->
+			<!-- <p>{{ name }}</p> -->
+			<!-- 绑定属性 -->
+			<img src="" v-bind:alt="name" >
+			<p>{{ getName() }}</p>
 		</div>
+
 		<script src="index.js">
 			
 		</script>
 	</body>
 </html>
+<!-- 
+{{ name }} 绑定数据
+v-bind 绑定数据 -->

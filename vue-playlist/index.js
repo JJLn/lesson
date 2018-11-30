@@ -2,7 +2,9 @@ var app1 = new Vue({
 	el:'#app1',
 	data:{
 		name:'vue',
-		desc:'getName is vue'
+		desc:'getName is vue',
+		website:"www.baidu.com",
+		seen:false
 	},
 	methods:{
 		getName :function(){

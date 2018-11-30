@@ -11,8 +11,12 @@
 			<!-- 绑定数据 -->
 			<!-- <p>{{ name }}</p> -->
 			<!-- 绑定属性 -->
-			<img src="" v-bind:alt="name" >
-			<p>{{ getName() }}</p>
+			<!-- <img src="" v-bind:alt="name" >
+			<p>{{ getName() }}</p> -->
+			
+			<!-- <a v-bind:href="website">baidu</a> -->
+		<p v-if="seen">{{website }}</p>
+		<p>aa</p>
 		</div>
 
 		<script src="index.js">
@@ -22,4 +26,6 @@
 </html>
 <!-- 
 {{ name }} 绑定数据
-v-bind 绑定数据 -->
+v-bind: + 属性 绑定数据 -->
+<!-- {{ getName() }} 方法绑定 -->
+<!-- v-if="seen" 条件显示 不占位-->

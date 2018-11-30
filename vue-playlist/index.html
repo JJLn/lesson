@@ -8,24 +8,19 @@
 	</head>
 	<body>
 		<div id="app1">
-			<!-- 绑定数据 -->
-			<!-- <p>{{ name }}</p> -->
-			<!-- 绑定属性 -->
-			<!-- <img src="" v-bind:alt="name" >
-			<p>{{ getName() }}</p> -->
-			
-			<!-- <a v-bind:href="website">baidu</a> -->
-		<p v-if="seen">{{website }}</p>
-		<p>aa</p>
+		
+		<!-- 双向数据绑定 -->
+			<p>name</p>
+			<input  type="text" v-model="name"/>
+			<span>{{name}}</span>
+			<p >age</p>
+			<input type="text" v-model="age" />
+			<span>{{age}}</span>
+			<button v-on:click="setAge" type="button">setAge</button>
 		</div>
-
+		
 		<script src="index.js">
 			
 		</script>
 	</body>
 </html>
-<!-- 
-{{ name }} 绑定数据
-v-bind: + 属性 绑定数据 -->
-<!-- {{ getName() }} 方法绑定 -->
-<!-- v-if="seen" 条件显示 不占位-->

@@ -1,14 +1,16 @@
 var app1 = new Vue({
 	el:'#app1',
 	data:{
-		name:'vue',
-		desc:'getName is vue',
-		website:"www.baidu.com",
-		seen:false
+		name:"",
+		age:""
 	},
 	methods:{
 		getName :function(){
 		return this.desc;
+		},
+		setAge :function(){
+			alert();
+		this.age = '10000';
 		}
 	}
 })
